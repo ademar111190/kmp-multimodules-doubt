@@ -1,0 +1,21 @@
+PODS:
+  - moduleA (1.0.0)
+  - moduleB (1.0.0)
+
+DEPENDENCIES:
+  - moduleA (from `../../common/moduleA`)
+  - moduleB (from `../../common/moduleB`)
+
+EXTERNAL SOURCES:
+  moduleA:
+    :path: "../../common/moduleA"
+  moduleB:
+    :path: "../../common/moduleB"
+
+SPEC CHECKSUMS:
+  moduleA: 8771c300697f2765e8b2eed3158278089b0d7ed6
+  moduleB: 14d4a5b736d7aea6541b5051e606d98b051875d5
+
+PODFILE CHECKSUM: 16cf12f0ad36be7a548d23e91bd81158b3c201dd
+
+COCOAPODS: 1.9.1

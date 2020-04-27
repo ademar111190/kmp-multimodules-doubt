@@ -1,0 +1,32 @@
+# Files
+.DS_Store
+.gradletasknamecache
+local.properties
+ktlint
+
+# Folders
+**/.gradle
+**/.idea
+**/build
+**/xcuserdata
+**/Pods/**
+
+# Extensions
+*.class
+*.d
+*.dia
+*.ear
+*.iml
+*.log
+*.nar
+*.rar
+*.tar.gz
+*.war
+*.xcodeproj
+*.xcuserstate
+*.xcworkspace
+*.zip
+
+# Patterns
+.~lock*
+hs_err_pid*

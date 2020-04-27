@@ -1,0 +1,6 @@
+platform :ios, '13.4'
+
+target 'Hello World' do 
+  pod 'moduleA', :path => '../../common/moduleA'
+  pod 'moduleB', :path => '../../common/moduleB'
+end
