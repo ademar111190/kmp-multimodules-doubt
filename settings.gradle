@@ -1,5 +1,6 @@
 rootProject.name = "HelloWorld"
 
 include ":android:app"
+include ":common:fat"
 include ":common:moduleA"
 include ":common:moduleB"

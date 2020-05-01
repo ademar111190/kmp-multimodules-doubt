@@ -22,9 +22,7 @@ ktlint
 *.rar
 *.tar.gz
 *.war
-*.xcodeproj
 *.xcuserstate
-*.xcworkspace
 *.zip
 
 # Patterns

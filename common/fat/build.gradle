@@ -1,0 +1,51 @@
+apply plugin: "org.jetbrains.kotlin.multiplatform"
+apply plugin: "org.jetbrains.kotlin.native.cocoapods"
+
+group = "HelloWorldGroup"
+version = "1.0.0"
+
+kotlin {
+    targets {
+        def iosClosure = {
+            binaries {
+                framework("FatModule")
+            }
+        }
+        if (System.getenv("SDK_NAME")?.startsWith("iphoneos")) {
+            iosArm64("ios", iosClosure)
+        } else {
+            iosX64("ios", iosClosure)
+        }
+    }
+
+    cocoapods {
+        summary = "HelloWorldSummary"
+        homepage = "HelloWorldHomePage"
+        frameworkName = "FatModule"
+    }
+
+    sourceSets {
+        def fatModules = [
+            "moduleA", 
+            "moduleB"
+        ]
+        commonMain {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib-common:1.3.72"
+            }
+            kotlin {
+                srcDirs += fatModules.collect {
+                    "${rootDir}/common/${it}/src/commonMain/kotlin"
+                }
+            }
+        }
+        iosMain{
+            dependencies {}
+            kotlin {
+                srcDirs += fatModules.collect {
+                    "${rootDir}/common/${it}/src/iosMain/kotlin"
+                }
+            }
+        }
+    }
+}

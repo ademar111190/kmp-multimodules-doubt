@@ -1,21 +1,16 @@
 PODS:
-  - moduleA (1.0.0)
-  - moduleB (1.0.0)
+  - fat (1.0.0)
 
 DEPENDENCIES:
-  - moduleA (from `../../common/moduleA`)
-  - moduleB (from `../../common/moduleB`)
+  - fat (from `../../common/fat`)
 
 EXTERNAL SOURCES:
-  moduleA:
-    :path: "../../common/moduleA"
-  moduleB:
-    :path: "../../common/moduleB"
+  fat:
+    :path: "../../common/fat"
 
 SPEC CHECKSUMS:
-  moduleA: 8771c300697f2765e8b2eed3158278089b0d7ed6
-  moduleB: 14d4a5b736d7aea6541b5051e606d98b051875d5
+  fat: def97d4f3f3c00632da3ea3feecc6e9905a9bb33
 
-PODFILE CHECKSUM: 16cf12f0ad36be7a548d23e91bd81158b3c201dd
+PODFILE CHECKSUM: eeb747143ed3f6ba0669ca77bb6256bfb6896048
 
 COCOAPODS: 1.9.1

@@ -1,6 +1,7 @@
 platform :ios, '13.4'
 
+use_frameworks!
+
 target 'Hello World' do 
-  pod 'moduleA', :path => '../../common/moduleA'
-  pod 'moduleB', :path => '../../common/moduleB'
+  pod 'fat', :path => '../../common/fat'
 end
